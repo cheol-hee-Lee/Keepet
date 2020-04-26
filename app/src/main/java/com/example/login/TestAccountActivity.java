@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.login.models.Member;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -52,13 +53,12 @@ public class TestAccountActivity extends AppCompatActivity {
                 member.setPhone(phone);
                 member.setHeight(height);
 
-                reff.push().setValue(member);
+                reff.child("member1").setValue(member);
                 Log.d("send", name + age + phone + height);
                 Toast.makeText(TestAccountActivity.this, name + age + phone + height, Toast.LENGTH_SHORT).show();
 
                 Toast.makeText(TestAccountActivity.this, "inserted Successfully", Toast.LENGTH_SHORT).show();
             }
         });
-
     }
 }

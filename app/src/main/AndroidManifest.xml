@@ -14,18 +14,17 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".TestAccountActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".TestAccountActivity" />
         <activity android:name=".GoogleActivity" />
         <activity android:name=".WelcomeActivity" />
-        <activity android:name=".StartActivity">
-
-        </activity>
+        <activity android:name=".StartActivity" />
     </application>
 
 </manifest>
