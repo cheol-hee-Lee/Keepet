@@ -9,8 +9,10 @@ import android.view.MenuItem;
 
 import com.example.login.FavoriteFragment;
 import com.example.login.HomeFragment;
+import com.example.login.PetFragment;
 import com.example.login.R;
 import com.example.login.SearchFragment;
+import com.example.login.ShopFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
@@ -43,6 +45,12 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.Search:
                         fragment = new SearchFragment();
+                        break;
+                    case R.id.Pet:
+                        fragment = new PetFragment();
+                        break;
+                    case R.id.Shop:
+                        fragment = new ShopFragment();
                         break;
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer, fragment).commit();

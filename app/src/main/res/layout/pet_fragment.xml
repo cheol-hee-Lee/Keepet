@@ -9,6 +9,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="50sp"
-        android:text="보호소 찾기"
-        />
+        android:text="반려동물"
+       />
 </LinearLayout>
