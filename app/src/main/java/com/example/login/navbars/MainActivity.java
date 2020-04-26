@@ -1,4 +1,4 @@
-package com.example.login;
+package com.example.login.navbars;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,6 +7,10 @@ import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.login.FavoriteFragment;
+import com.example.login.HomeFragment;
+import com.example.login.R;
+import com.example.login.SearchFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
