@@ -12,10 +12,10 @@
         android:id="@+id/fragmentContainer"
         android:layout_width="match_parent"
         android:layout_height="620dp"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerVertical="true"
         android:layout_marginTop="55dp"
-        >
+        android:layout_marginBottom="54dp">
 
     </FrameLayout>
 
@@ -25,7 +25,11 @@
         android:id="@+id/bottomNav"
         android:layout_alignParentBottom="true"
         app:menu="@menu/menu"
-        android:background="#fff">
+        android:background="#fff"
+        app:labelVisibilityMode="labeled"
+        app:itemTextColor="@color/menu_color"
+        app:itemIconTint="@color/menu_color"
+        >
 
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
